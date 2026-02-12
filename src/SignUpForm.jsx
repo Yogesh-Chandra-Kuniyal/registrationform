@@ -46,7 +46,7 @@ export default function SignUpForm() {
       const payload = { ...user };
       delete payload.confirmPassword;
 
-      await axios.post("http://localhost:5000/users", payload);
+      await axios.post("https://2wtfugdqbf.execute-api.us-east-1.amazonaws.com/users", payload);
 
       setSubmittedUser(payload);
 

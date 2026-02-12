@@ -6,7 +6,7 @@ const Display = () => {
 
     useEffect(() => {
         axios
-            .get("http://localhost:5000/users")
+            .get("https://2wtfugdqbf.execute-api.us-east-1.amazonaws.com/users")
             .then((response) => {
                 setAllUser(response.data);
             })
